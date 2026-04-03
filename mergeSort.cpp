@@ -32,5 +32,7 @@ void input (){
 
 // creat function mergeSort
 void mergeSort (int low, int high){
-    
+    if (low >= high){
+        return;
+    }
 }
