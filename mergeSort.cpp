@@ -29,3 +29,8 @@ void input (){
         cin >> arr[i];
     }
 }
+
+// creat function mergeSort
+void mergeSort (int low, int high){
+    
+}
