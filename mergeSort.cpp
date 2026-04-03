@@ -2,7 +2,7 @@
 using namespace std;
 
 // create main array & temporary array
-int arr[20], B [20];
+int arr[20], B[20];
 
 // n is array input size
 int n;
@@ -26,7 +26,7 @@ void input (){
     cout << "\n-----------------------" << endl;
 
     for (int i = 0; i < n; i++){
-        cout << "Array indeks ke-" << i << endl;
+        cout << "Array indeks ke-" << i << " : ";
         cin >> arr[i];
     }
 
@@ -74,7 +74,7 @@ void mergeSort (int low, int high){
     while (i <= mid){ // step 4.f
         B[k] = arr[i];    // step 4.f.i
         i++;              // step 4.f.j
-        k = k + 1;        // step 4.f.k
+        k++;        // step 4.f.k
     }
 
     // step 5
@@ -91,14 +91,14 @@ void output(){
 
     for (int i = 0; i < n; i++)
     {
-        cout << arr[n] << " ";
+        cout << arr[i] << " ";
     }
     
     cout << endl;
 
 }
 
-void main (){
+int main (){
 
     input();
     mergeSort(0, n - 1);
