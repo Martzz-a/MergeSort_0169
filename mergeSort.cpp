@@ -8,6 +8,7 @@ int arr[20], B [20];
 int n;
 
 void input (){
+
     while (true)
     {
         cout << "Masukkan panjang elemnet array : ";
@@ -28,13 +29,13 @@ void input (){
         cout << "Array indeks ke-" << i << endl;
         cin >> arr[i];
     }
+
 }
 
 // creat function mergeSort
 void mergeSort (int low, int high){
     
-    if (low >= high) // step 1
-    {
+    if (low >= high){ // step 1
         return; // step 1.a
     }
 
@@ -44,4 +45,10 @@ void mergeSort (int low, int high){
     // fungsi rekursi - memanggil diri sendiri
     mergeSort(low, mid);        // step 3.a
     mergeSort(mid + 1, high);   // step 3.b
+
+    // step 4
+    int i = low;      // step 4.a
+    int j = mid + 1;  // step 4.b
+    int k = low;      // step 4.c
+    
 }
