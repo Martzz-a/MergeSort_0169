@@ -19,4 +19,8 @@ void input (){
             cout << " \nMaksimal panjang array adalah 20"
         }
     }
+
+    cout << "\n-----------------------" << endl;
+    cout << "\nInput isi element array" << endl;
+    cout << "\n-----------------------" << endl;
 }
